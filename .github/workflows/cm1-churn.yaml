@@ -33,6 +33,7 @@ jobs:
       - name: Create CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_URL: https://github.com/oubraimikawtar/churn-cml
         run: |
           echo "## Metrics" > report.md
           cat metrics.txt >> report.md
