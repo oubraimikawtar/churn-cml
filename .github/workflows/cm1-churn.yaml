@@ -37,7 +37,4 @@ jobs:
         run: |
           echo "## Metrics" > report.md
           cat metrics.txt >> report.md
-          echo "" >> report.md
-          echo "## Confusion Matrix" >> report.md
-          echo "![Confusion Matrix](./conf_matrix.png)" >> report.md
           cml comment create report.md
